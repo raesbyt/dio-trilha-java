@@ -1,18 +1,30 @@
-## Getting Started
+## Sistema para validação de processo seletivo
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Caso 1
 
-## Folder Structure
+Vamos imaginar que em um processo seletivo existe o valor base salarial de R$ 2,000.00 e o salário pretendido pelo candidato. Vamos desenvolve um controle de fluxo onde:
 
-The workspace contains two folders by default, where:
+* Se o valor salario base for maior que salario pretendido, imprima:
+  `LIGAR PARA O CANDODATO`
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+* Senão Se o valor salario base for igual ao valor salario pretendido, imprima:
+  `LIGAR PARA O CANDIDATO COM CONTRA PROPOSTA`
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* Senão imprima:
+  `AGUARDANDO RESULTADO DEMAIS CANDIDATOS`
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+## Caso 2
 
-## Dependency Management
+Foi solicitado que nosso sistema garanta que diante das inúmeros candidatos sejam selecionados apenas no maximo 5 candidatos para entrevista onde o salário pretendido seja menor ou igual ao solário base.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Caso 3
+
+Agora é hora de imprimir a lista dos candidatos selecionados para disponibilizar para o RH entrar em contato.
+
+## Caso 4
+
+O RH deveá realizar uma ligação com o maximo 03 tentativas para cada candidato selecionado e caso o candidato atenda, deve-se imprimir:
+
+* `CONSEGUIMOS CONTATO COM [CANDIDATO] APÓS [TENTATIVAS]`
+
+* do contrario imprima: `NÃO CONSEGUIMOS CONTATO COM O [CANDIDATO]`
